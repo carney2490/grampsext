@@ -23,5 +23,8 @@
     "content_scripts": [{
         "matches": ["*://*.google.com/*", "*://*.facebook.com/*"],
         "js": ["alert.js"]
-    }]
+    }],
+    "web_accessible_resources": [
+        "alert.html"
+    ]
 }
