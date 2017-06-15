@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+    "name": "Chrome Extension Lunch and Learn",
+    "description": "When Grandpa or Grandma thinks they are on google but actually on facebook and post embarrasing things to their wall.  This extension will help keep that from happening.",
+    "version": "1.0",
+    "background": {
+        "persistent": true,
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "https://*.google.com/*",
+        "https://*.facebook.com/*",
+        "activeTab",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_icon": "MM.png",
+        "default_popup": "popup.html",
+        "default_title": "Don't embarrase me Gramps!"
+    }
+}
