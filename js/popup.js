@@ -23,7 +23,7 @@
       } else if (site.includes("google")) {
           alert("This is your search page, feel free to search whatever you want.")
       } else {
-          alert("You are not on facebook or google.")
+          alert("You are not on facebook or google.  It is probably safe :)")
       }
   }
   console.log(tablink);
