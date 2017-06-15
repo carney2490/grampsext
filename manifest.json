@@ -10,8 +10,8 @@
         "scripts": ["background.js"]
     },
     "permissions": [
-        "https://*.google.com/*",
-        "https://*.facebook.com/*",
+        "*://*.google.com/*",
+        "*://*.facebook.com/*",
         "activeTab",
         "tabs"
     ],
@@ -19,5 +19,9 @@
         "default_icon": "MM.png",
         "default_popup": "popup.html",
         "default_title": "Don't embarrase me Gramps!"
-    }
+    },
+    "content_scripts": [{
+        "matches": ["*://*.google.com/*", "*://*.facebook.com/*"],
+        "js": ["contentscript.js"]
+    }]
 }
