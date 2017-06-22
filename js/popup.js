@@ -1,12 +1,4 @@
   $(function() {
-      //   $('#onButton').bind('click', function() {
-      //       $("#onButton").hide();
-      //       $("#offButton").show();
-      //   });
-      //   $('#offButton').bind('click', function() {
-      //       $("#offButton").hide();
-      //       $("#onButton").show();
-      //   });
       chrome.tabs.getSelected(null, function(tab) {
           myFunction(tab.url);
       });
@@ -26,12 +18,3 @@
           alert("You are not on facebook or google.  It is probably safe :)")
       }
   }
-  console.log(tablink);
-  // $(document).ready(function() {
-  //     $("#hide").click(function() {
-  //         $("p").hide();
-  //     });
-  //     $("#show").click(function() {
-  //         $("p").show();
-  //     });
-  // });
